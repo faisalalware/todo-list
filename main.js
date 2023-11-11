@@ -3,6 +3,7 @@ const todoButton = document.querySelector('#add-btn');
 const todoList = document.querySelector('.todo-list');
 const inputWrapper = document.querySelector('.input-wrapper');
 
+// Click event listener on Button & List
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 
@@ -48,7 +49,6 @@ function addTodo(e) {
 }
 
 function deleteCheck(e) {
-    console.log(e.target);
     const item = e.target;
 
     if (item.classList[0] === "trash-btn") {
